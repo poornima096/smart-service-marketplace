@@ -11,14 +11,12 @@ import java.util.Date;
 
 @Service
 public class JwtService {
+private static final String SECRET = System.getenv("JWT_SECRET");
 
-    private static final String SECRET =
-            "my-super-secret-key-for-smart-service-marketplace-1234567890";
-
-    private final SecretKey key =
-            Keys.hmacShaKeyFor(
-                    SECRET.getBytes(StandardCharsets.UTF_8)
-            );
+private final SecretKey key =
+        Keys.hmacShaKeyFor(
+                SECRET.getBytes(StandardCharsets.UTF_8)
+        );
 
     public String generateToken(String email, String role) {
 

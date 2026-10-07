@@ -1,0 +1,20 @@
+# Backend secrets/config
+smart-service-marketplace/src/main/resources/application.properties
+
+# Frontend dependencies
+smart-service-marketplace-frontend/node_modules/
+
+# Frontend build
+smart-service-marketplace-frontend/dist/
+
+# Backend build
+smart-service-marketplace/target/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db

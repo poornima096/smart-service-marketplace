@@ -87,13 +87,7 @@ public class SecurityConfig {
                         )
 
                         // Booking APIs
-                        .requestMatchers(
-                                "/api/bookings/**"
-                        ).hasAnyRole(
-                                "CUSTOMER",
-                                "VENDOR",
-                                "ADMIN"
-                        )
+                       .requestMatchers("/api/bookings/**").authenticated()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                           
                         

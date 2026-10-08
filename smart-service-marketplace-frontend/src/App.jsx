@@ -8,7 +8,7 @@ import VendorDashboard from "./pages/VendorDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import "./App.css";
 
-const API_URL = "http://localhost:8084";
+const API_URL =  "https://smart-service-marketplace-production.up.railway.app";
 
 function App() {
   return (

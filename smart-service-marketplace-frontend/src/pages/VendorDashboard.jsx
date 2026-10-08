@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 
-const API_URL = "http://localhost:8084";
+const API_URL =  "https://smart-service-marketplace-production.up.railway.app";
 
 function VendorDashboard() {
   const navigate = useNavigate();

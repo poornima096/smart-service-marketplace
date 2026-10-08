@@ -22,7 +22,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://localhost:8084/api/users/register",
+      "https://smart-service-marketplace-production.up.railway.app/api/users/register",
         {
           name: name,
           email: email,

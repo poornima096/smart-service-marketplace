@@ -110,9 +110,9 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(
-            Arrays.asList("http://localhost:5173")
-        );
+      configuration.setAllowedOrigins(
+    Arrays.asList("https://luminous-mercy-production-47fd.up.railway.app")
+);
 
         configuration.setAllowedMethods(
             Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")

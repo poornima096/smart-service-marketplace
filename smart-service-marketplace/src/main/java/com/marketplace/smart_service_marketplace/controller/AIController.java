@@ -8,7 +8,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/ai")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://luminous-mercy-production-47fd.up.railway.app"
+})
 public class AIController {
 
     private final AIService aiService;
